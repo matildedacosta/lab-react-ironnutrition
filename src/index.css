@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+form {
+  width: 500px;
+}
+
+form button {
+  margin: 1rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-food {
+  margin: 1rem;
+}
+
+/* .search-input {
+  width: 500px;
+}
+
+.search-section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

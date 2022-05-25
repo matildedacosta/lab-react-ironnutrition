@@ -15,16 +15,19 @@ function SearchFood(props) {
 
   return (
     <>
-      <Divider>Search</Divider>
-
-      <label htmlFor="search">Search</label>
-      <Input
-        value={search}
-        type="text"
-        name="search"
-        id="search"
-        onChange={handleSearch}
-      />
+      <section className="search-section">
+        <Divider>Search</Divider>
+        <div className="search-input">
+          <Input
+            placeholder="food"
+            value={search}
+            type="text"
+            name="search"
+            id="search"
+            onChange={handleSearch}
+          />
+        </div>
+      </section>
     </>
   );
 }

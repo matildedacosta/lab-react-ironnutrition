@@ -30,23 +30,45 @@ function AddFoodForm(props) {
   const handleServings = (e) => setServings(e.target.value);
 
   return (
-    <div>
+    <div className="form">
       <form onSubmit={handleSubmit}>
         <Divider>Add Food Entry</Divider>
 
         <label htmlFor="name">Name:</label>
-        <Input value={name} type="text" onChange={handleName} />
+        <Input
+          className="form-input"
+          value={name}
+          type="text"
+          onChange={handleName}
+        />
 
         <label htmlFor="image">Image:</label>
-        <Input value={image} type="text" onChange={handleImage} />
+        <Input
+          className="form-input"
+          value={image}
+          type="text"
+          onChange={handleImage}
+        />
 
         <label htmlFor="calories">Calories:</label>
-        <Input value={calories} type="number" onChange={handleCalories} />
+        <Input
+          className="form-input"
+          value={calories}
+          type="number"
+          onChange={handleCalories}
+        />
 
         <label htmlFor="servings">Servings:</label>
-        <Input value={servings} type="number" onChange={handleServings} />
+        <Input
+          className="form-input"
+          value={servings}
+          type="number"
+          onChange={handleServings}
+        />
 
-        <Button type="submit">Create</Button>
+        <Button className="form-input" type="submit">
+          Create
+        </Button>
       </form>
     </div>
   );

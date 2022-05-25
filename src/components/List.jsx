@@ -40,7 +40,7 @@ function List() {
   };
 
   return (
-    <div>
+    <div className="list-section">
       <Button onClick={toggleShowAll}>
         {' '}
         {showForm ? 'Hide Form' : 'Show Form'}{' '}
@@ -49,7 +49,9 @@ function List() {
 
       <Divider>Food List</Divider>
       <SearchFood searchFilter={searchFilter} />
-      <Button onClick={toggleShow}>{showFoodList ? 'Hide' : 'Show'}</Button>
+      <Button className="show-food" onClick={toggleShow}>
+        {showFoodList ? 'Hide' : 'Show'}
+      </Button>
       {foodList.length === 0 && <p>No Food :((((((((</p>}
       <Row style={{ width: '100%', justifyContent: 'center' }}>
         {showFoodList &&
